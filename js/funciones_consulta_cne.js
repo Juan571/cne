@@ -8,6 +8,11 @@ $(document).ready(function() {
 
     });
     $("#cedula").focus();
+    $('#cedula').keypress(function (e) {
+      if (e.which == 13) {
+       $("#guardar").trigger("click");
+      }
+    });
     $("#form1").validate({
         rules:{
             cedula:{
