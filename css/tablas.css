@@ -1,0 +1,520 @@
+@CHARSET "UTF-8";
+
+/*
+.tabla_std
+{
+    color:black;
+    background-color: #FFF;	
+    text-transform:uppercase;
+    clear:both;
+    padding: 0;
+    margin: 0 0 2em 0;
+    white-space: normal;
+	border:1px solid #ccc;
+}
+
+tr.resaltar:hover
+{
+ background:url(../img/menu.png);
+ color:#990000;
+ cursor:pointer;
+}
+
+.td_std
+{
+    font-family:arial, Helvetica, sans-serif, serif, fantasy;
+    font-size: 10pt;
+    line-height: normal;
+    white-space: normal;	
+}
+
+*/
+
+
+.tabla_std {
+  width: 100%;
+  margin-bottom: 3px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.tabla_std th,
+.tabla_std td {
+  padding: 2px 2px 2px 2px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle !imporntant;
+  border-top: 1px solid #dddddd;
+}
+
+.tabla_std th {
+  font-weight: bold;
+}
+
+.tabla_std thead th {
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.tabla_std caption + thead tr:first-child th,
+.tabla_std caption + thead tr:first-child td,
+.tabla_std colgroup + thead tr:first-child th,
+.tabla_std colgroup + thead tr:first-child td,
+.tabla_std thead:first-child tr:first-child th,
+.tabla_std thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.tabla_std tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 3px;
+}
+
+.tabla_std, .table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.tabla_std th, .table-bordered th,
+.tabla_std td, .table-bordered td {
+  border-left: 1px solid silver;
+}
+
+.tabla_std, .table-bordered caption + thead tr:first-child th,
+.tabla_std, .table-bordered caption + tbody tr:first-child th,
+.tabla_std, .table-bordered caption + tbody tr:first-child td,
+.tabla_std, .table-bordered colgroup + thead tr:first-child th,
+.tabla_std, .table-bordered colgroup + tbody tr:first-child th,
+.tabla_std, .table-bordered colgroup + tbody tr:first-child td,
+.tabla_std, .table-bordered thead:first-child tr:first-child th,
+.tabla_std, .table-bordered tbody:first-child tr:first-child th,
+.tabla_std, .table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.tabla_std, .table-bordered thead:first-child tr:first-child > th:first-child,
+.tabla_std, .table-bordered tbody:first-child tr:first-child > td:first-child,
+.tabla_std, .table-bordered tbody:first-child tr:first-child > th:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.tabla_std, .table-bordered thead:first-child tr:first-child > th:last-child,
+.tabla_std, .table-bordered tbody:first-child tr:first-child > td:last-child,
+.tabla_std, .table-bordered tbody:first-child tr:first-child > th:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.tabla_std, .table-bordered thead:last-child tr:last-child > th:first-child,
+.tabla_std, .table-bordered tbody:last-child tr:last-child > td:first-child,
+.tabla_std, .table-bordered tbody:last-child tr:last-child > th:first-child,
+.tabla_std, .table-bordered tfoot:last-child tr:last-child > td:first-child,
+.tabla_std, .table-bordered tfoot:last-child tr:last-child > th:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.tabla_std, .table-bordered thead:last-child tr:last-child > th:last-child,
+.tabla_std, .table-bordered tbody:last-child tr:last-child > td:last-child,
+.tabla_std, .table-bordered tbody:last-child tr:last-child > th:last-child,
+.tabla_std, .table-bordered tfoot:last-child tr:last-child > td:last-child,
+.tabla_std, .table-bordered tfoot:last-child tr:last-child > th:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.tabla_std, .table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+}
+
+.tabla_std, .table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+}
+
+.tabla_std, .table-bordered caption + thead tr:first-child th:first-child,
+.tabla_std, .table-bordered caption + tbody tr:first-child td:first-child,
+.tabla_std, .table-bordered colgroup + thead tr:first-child th:first-child,
+.tabla_std, .table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.tabla_std, .table-bordered caption + thead tr:first-child th:last-child,
+.tabla_std, .table-bordered caption + tbody tr:first-child td:last-child,
+.tabla_std, .table-bordered colgroup + thead tr:first-child th:last-child,
+.tabla_std, .table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.tabla_std tbody > tr:nth-child(odd) > td,
+.tabla_std tbody > tr:nth-child(odd) > th {
+ 	background-color: #f9f9f9;
+}
+
+.resaltar tbody tr:hover > td,
+.resaltar tbody tr:hover > th {
+  background-color: #D5D3D3;
+}
+
+table td[class*="span"],
+table th[class*="span"],
+.row-fluid table td[class*="span"],
+.row-fluid table th[class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0;
+}
+
+.tabla_std td.span1,
+.tabla_std th.span1 {
+  float: none;
+  width: 44px;
+  margin-left: 0;
+}
+
+.tabla_std td.span2,
+.tabla_std th.span2 {
+  float: none;
+  width: 124px;
+  margin-left: 0;
+}
+
+.tabla_std td.span3,
+.tabla_std th.span3 {
+  float: none;
+  width: 204px;
+  margin-left: 0;
+}
+
+.tabla_std td.span4,
+.tabla_std th.span4 {
+  float: none;
+  width: 284px;
+  margin-left: 0;
+}
+
+.tabla_std td.span5,
+.tabla_std th.span5 {
+  float: none;
+  width: 364px;
+  margin-left: 0;
+}
+
+.tabla_std td.span6,
+.tabla_std th.span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0;
+}
+
+.tabla_std td.span7,
+.tabla_std th.span7 {
+  float: none;
+  width: 524px;
+  margin-left: 0;
+}
+
+.tabla_std td.span8,
+.tabla_std th.span8 {
+  float: none;
+  width: 604px;
+  margin-left: 0;
+}
+
+.tabla_std td.span9,
+.tabla_std th.span9 {
+  float: none;
+  width: 684px;
+  margin-left: 0;
+}
+
+.tabla_std td.span10,
+.tabla_std th.span10 {
+  float: none;
+  width: 764px;
+  margin-left: 0;
+}
+
+.tabla_std td.span11,
+.tabla_std th.span11 {
+  float: none;
+  width: 844px;
+  margin-left: 0;
+}
+
+.tabla_std td.span12,
+.tabla_std th.span12 {
+  float: none;
+  width: 924px;
+  margin-left: 0;
+}
+
+.tabla_std tbody tr.success > td {
+  background-color: #dff0d8;
+}
+
+.tabla_std tbody tr.error > td {
+  background-color: #f2dede;
+}
+
+.tabla_std tbody tr.warning > td {
+  background-color: #fcf8e3;
+}
+
+.tabla_std tbody tr.info > td {
+  background-color: #d9edf7;
+}
+
+.tabla_std-hover tbody tr.success:hover > td {
+  background-color: #d0e9c6;
+}
+
+.tabla_std-hover tbody tr.error:hover > td {
+  background-color: #ebcccc;
+}
+
+.tabla_std-hover tbody tr.warning:hover > td {
+  background-color: #faf2cc;
+}
+
+.tabla_std-hover tbody tr.info:hover > td {
+  background-color: #c4e3f3;
+}
+
+
+.th_std, .fila_ordenar {
+ 	color:#990000;
+	font-size: 12px;
+	text-transform:uppercase;
+	font-weight: bold;
+	text-align: center !important;
+}
+
+.fila_ordenar:hover{
+	cursor:pointer;
+	background:url(../img/menu_seleccion.png);
+}
+.txt_resaltar:hover input{
+	font-weight: bold;
+}
+.table_std .tr_std .td_std {
+	/*border-right: 1px solid #ddd;*/
+/*	padding:4px 4px;
+	vertical-align:top;*/
+}
+.table_std .tr_std.altRow .td_std {
+	/*background: #f4f4f4;*/
+}
+.table_std .td_std.actions {
+	white-space: nowrap;
+}
+
+.boton_guardar, .boton_limpiar, .boton_agregar, .boton_consulta, .boton_inicio, .boton_detalle,
+.boton_cancelar, .boton_imprimir, .boton_buscar, .boton_mas, .boton_editar, .boton_ver, 
+.boton_inicio, .boton_calcular, .boton_enviar, .boton_reporte, .boton_transferir, .boton_actualizar
+
+{
+	/*padding: 2px 1px 0px 18px;
+	border: 2px outset #7F9DB9;
+	color:#990000;
+	font-family: "trebuchet MS",sans-serif;
+	font-size: 10pt;
+	font-weight:bold;
+	*/
+	  display: inline-block;
+	  *display: inline;
+	  padding: 4px 4px 4px 24px;
+	  padding-left: auto;
+	  margin-bottom: 0;
+	  *margin-left: .3em;
+	  font-size: 14px;
+	  line-height: 20px;
+	  color: #333333;
+	  text-align: center;
+	  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	  vertical-align: middle;
+	  cursor: pointer;
+	  background-color: #f5f5f5;
+	  *background-color: #e6e6e6;
+	  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	  background-repeat: repeat-x;
+	  border: 1px solid #cccccc;
+	  *border: 0;
+	  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  border-bottom-color: #b3b3b3;
+	  -webkit-border-radius: 4px;
+	     -moz-border-radius: 4px;
+	          border-radius: 4px;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+	  *zoom: 1;
+	  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	  
+	  min-height: 25px;
+	  min-width: 35px;
+	  background-attachment: scroll;
+	  background-position: 6px center !important;
+	  background-size: 15px 15px;
+	
+	  box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-khtml-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+
+	  text-align: center;
+}
+
+
+button:HOVER, input[type="button"]:HOVER {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  text-decoration: none;
+ /* background-position: 0 5px;*/
+  -webkit-transition: background-position 0.1s linear;
+     -moz-transition: background-position 0.1s linear;
+       -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear;
+}
+
+button:ACTIVE, input[type="button"]:ACTIVE{
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.boton_guardar
+{
+  background: #F5F5F5 url(../img/diskette.png) no-repeat;
+}
+
+.boton_limpiar
+{
+  background: #F5F5F5 url(../img/limpiar.png) no-repeat;
+}
+
+.boton_consulta
+{
+  background: #F5F5F5 url(../img/buscapista.png) no-repeat;
+
+}
+
+.boton_detalle
+{
+    background: #F5F5F5 url(../img/detalle.png) no-repeat;
+}
+
+.boton_agregar
+{
+    background: #F5F5F5 url(../img/agregar.png) no-repeat;
+}
+
+.boton_consulta
+{
+  background: #F5F5F5 url(../img/buscapista.png) no-repeat;
+
+}
+
+.boton_certificar
+{
+    background: #F5F5F5 url(../img/certificar.png) no-repeat;
+}
+
+.tainp{
+    height: 22px;
+    width:99%;
+	 font-family: "trebuchet MS", Arial, sans-serif;
+	 font-size: 10pt;
+	 /*font-weight:bold;*/
+}
+/*
+.boton_cancelar, .boton_imprimir, .boton_buscar, .boton_mas, .boton_editar, .boton_ver, .boton_inicio, .boton_calcular, .boton_enviar, .boton_reporte, .boton_transferir, .boton_actualizar
+{
+	background-color: white;
+}*/
+
+.boton_inicio
+{
+    background: #F5F5F5 url(../img/icono_tp_llave.png) no-repeat;	
+}
+
+.boton_cancelar{
+    background: #F5F5F5 url(../img/cancemina.gif) no-repeat;
+}
+
+.boton_buscar{
+    background: #F5F5F5 url(../img/buscapista.png) no-repeat;
+}
+
+.boton_reporte{
+    background: #F5F5F5 url(../img/imapdfe.png) no-repeat;
+}
+
+.boton_imprimir{
+    background: #F5F5F5 url(../img/impresora.png) no-repeat;
+}
+
+.boton_mas
+{
+    background: #F5F5F5 url(../img/add.png) no-repeat;
+}
+
+.boton_editar
+{
+    background: #F5F5F5 url(../img/editarNuevo.png) no-repeat;
+}
+
+.boton_ver
+{
+    background: #F5F5F5 url(../img/ver.png) no-repeat;
+}
+
+.boton_calcular
+{
+    background: #F5F5F5 url(../img/calculadora.png) no-repeat;
+}
+.boton_enviar
+{
+    background: #F5F5F5 url(../img/enviar.png) no-repeat;
+}
+.boton_transferir
+{
+    background: #F5F5F5 url(../img/transferencia.png) no-repeat;
+}
+.boton_actualizar
+{
+    background: #F5F5F5 url(../img/refrescar.png) no-repeat;
+}
+

@@ -1,0 +1,1484 @@
+/*
+	Recurso: elementos.css
+	Fecha: 13 de marzo de 2013
+	Organización: Venezolana de Telecomunicaciones, C.A
+*/
+/* ------------------------------------------------------------------------ Variables | Desactivar el foco de los botones y enlaces ---- */
+	::-moz-focus-inner {
+		border: 0px;
+	}
+/* ------------------------------------------------------------------------ Fin | Desactivar el foco de los botones y enlaces ---------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------ Elementos seleccionados por el nombre asignado --------- */
+	input[name="cedula_act"],
+	input[name="nombre_act"],
+	input[name="apellido_act"],
+	input[name="twitter_act"],
+	input[name="telefono_act"],
+	input[name="correo_act"],
+	input[name="whatsapp_act"],
+	input[name="dependencia_act"],
+	input[name="pin_ac"] {
+		display: block;
+		position: relative;
+		margin: 0px auto;
+		height: 26px; width: 70px;
+		font-size: 12px;
+		padding: 0px 10px;
+		outline: none;
+		border: 1px solid #707070;
+	}
+	input[name="correo_act"] {
+		width: 170px;
+	}
+	input[name="nombre_act"],
+	input[name="apellido_act"],
+	input[name="twitter_act"],
+	input[name="telefono_act"] {
+		width: 100px;
+	}
+	input[name="whatsapp_act"] {
+		width: 20px;
+	}
+/* ------------------------------------------------------------------------ Fin | Elementos seleccionados por el nombre asignado --- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------ ETIQUETAS ------------------------------------------- \\ */
+	* {
+		font-family: arial, sans-serif, verdana;
+	}
+	body, html, div, section, aside, article, footer, header, table, td, th {
+		margin: 0px;
+		padding: 0px;
+	}
+	body, html {
+		min-height: 100%;
+		background-color: #f0f0f0;
+		/* background-image: url('../images/hugo_chavez/wallpaper_chavez.png'); */
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed; /* La idea es mantener la imagen fija */
+	}
+	div {
+		display: block;
+		font-size: 12px;
+	}
+	/* Definiendo el formato de la línea */
+		hr {
+			display: block;
+			position: relative;
+			clear: both;
+			border: 0px;
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		}
+	/* No se incluye como parte del formato de la hoja de estilo */
+		select[disabled="disabled"] {
+			background: #e0e0e0;
+			color: #404040; text-shadow: 0px 1px 1px white;
+		}
+	/* Fin | No se incluye como parte del formato de la hoja de estilo */
+	/* Definiendo las propiedades predeterminada de la tabla */
+		table {
+			position: relative;
+			margin: 0px auto;
+			padding: 0px;
+			margin: 0px;
+			border-collapse: collapse;
+			border: 0px;
+		}
+		table th, table td {
+			border: 0px;
+			vertical-align: middle;
+		}
+		col {
+			
+		}
+		col:nth-child(even) {
+			background-color: #fff9e0;
+		}
+		ul li, ol li {
+			margin-bottom: 5px;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			display: block;
+			color: #404040;
+		}
+		h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+			color: black;
+		}
+/* ------------------------------------------------------------------------ FIN | ETIQUETAS ------------------------------------- \\ */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------ ID REQUERIDO ---------------------------------------- \\ */
+	#tabs-datos_per {
+		display: block;
+		position: relative;
+		margin: 0px auto !important;
+		height: auto;
+		overflow: hidden;
+	}
+	
+	#tabs-datos_per table td {
+		padding: 0px 4px !important;
+		vertical-align: middle;
+	}
+	#tabs-datos_per table.clsTabla:first-child td {
+		background: #f0f0f0;
+		border-left: 1px solid rgba(255, 255, 255, 0.9) !important;
+		border-top: 1px solid rgba(255, 255, 255, 0.9) !important;
+		height: 30px;
+	}
+	#tabs-datos_per table:first-child td, #tabs-datos_per table:first-child th {
+		border: 0px !important;
+	}
+	#tabs-datos_per table.clsTabla:nth-child(1) {
+		border: 1px solid white;
+	}
+	#tabs-datos_per table tr td:nth-child(1), #tabs-datos_per table tr td:nth-child(3), #tabs-datos_per table tr td:nth-child(5) {
+		text-align: right;
+	}
+	#tabs-datos_per table tr:nth-child(8) td {
+		text-align: center;
+	}
+	#tabs-datos_per table td input[type="text"] {
+		display: inline-block;
+		margin: 0px;
+		outline: none;
+		border: 1px solid #a0a0a0;
+		border-radius: 2px;
+		height: 24px;
+		padding: 0px 5px;
+		text-align: left;
+		vertical-align: middle;
+		font-size: 12px;
+	}
+	#tabs-datos_per table td textarea {
+		display: block;
+		position: relative;
+		margin: 4px auto;
+		width: calc(100% - 11px) !important;
+		
+			/* En navegadores que apenas lo están implementando */
+				width: -webkit-calc(100% - 11px) !important;
+				width: -moz-calc(100% - 11px) !important;
+				width: -kthml-calc(100% - 11px) !important;
+				width: -o-calc(100% - 11px) !important;
+				width: -ms-calc(100% - 11px) !important;
+				
+		height: 30px;
+		outline: none;
+		border: 1px solid #a0a0a0;
+		box-shadow: 0px 0px 2px white inset, box-shadow: 0px 0px 2px white;
+		font-size:12px;
+		padding: 4px !important;
+		resize: none;
+	}
+	#tabs-datos_per table td input[type="text"] + * {
+		display: inline-block;
+		position: absolute;
+		margin: 0px 2px;
+		white-space: normal !important;
+		padding: 0px;
+		height: 26px;
+	}
+	#tabs-datos_per table select {
+		max-width: 300px;
+	}
+/* ------------------------------------------------------------------------ FIN | ID REQUERIDO ---------------------------------- \\ */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------ CLASES DEFINIDAS POR EL USUARIO --------------------- \\ */
+	.cabecera {
+		position: relative;
+		margin: 0px auto;
+		height: 64px;
+		padding: 4px;
+		background-color: white;
+		
+				
+		/* Bordes y sombreado */
+			border: 1px solid black;
+			border-bottom-color: #a0a0a0;
+			box-shadow: 0px 0px 1px white inset, 0px 0px 1px white;
+			
+		/* Control de desbordamiento */
+			overflow: hidden;
+	}
+	
+	.texto_anuncio{
+		text-transform: uppercase;
+		font-weight: bold;
+		color: darkred;
+		font-size: 14px;
+	}
+	
+	/* Formato para las imágenes */
+		.cabecera img {
+			position: absolute;
+			margin: auto;
+			left: 120px; right: 0px;
+			top: 0px; bottom: 0px;
+			height: 60px;
+			transition-timing-function: ease;
+			
+			/* Aplicación de la animación */
+				animation-duration: 0.5s;
+				animation-name: vtelcaB;
+				
+				/* En navegadores que apenas lo implementan */
+					-webkit-animation-duration: 0.5s;
+					-webkit-animation-name: vtelcaB;
+		}
+		.cabecera img:first-child {
+			left: 5px; right: auto;
+			
+			/* Aplicación de la animación */
+				transition-timing-function: ease;
+				animation-duration: 0.7s;
+				animation-name: vtelcaA;
+				
+				/* En navegadores que apenas lo implementan */
+				-webkit-transition-timing-function: ease;
+				-webkit-animation-duration: 0.7s;
+				-webkit-animation-name: vtelcaA;
+		}
+		.cabecera img:last-child {
+			left: auto; right: 5px;
+			
+			/* Aplicación de la animación */
+				animation-duration: 0.7s;
+				animation-name: vtelcaC;
+				transition-timing-function: ease;
+				
+				/* En navegadores que apenas lo implementan */
+					-webkit-animation-duration: 0.7s;
+					-webkit-animation-name: vtelcaC;
+					-webkit-transition-timing-function: ease;
+		}
+	/* Formato de tabla en función de lo que está en planificación tecnológica */
+		.clsTabla {
+			position: relative;
+			margin: 0px auto !important;
+			width: auto !important;
+			border-left: 1px solid silver;
+			border-top: 1px solid silver;
+		}
+		.clsTabla tr:first-child td {
+			height: 30px;
+			color: #303030; text-shadow: 0px 1px 1px white;
+			
+			/* Fondo especializado */
+				background-image: linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				
+				/* En navegadores que aún no lo han implementado */
+					background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -khtml-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				
+			/* Bordes y sombreados */
+				box-shadow: 0px 0px 2px white inset;
+				
+		}
+		
+		.clsTabla td{
+			border-bottom: 1px solid silver;
+			border-right: 1px solid silver;
+		}
+		
+		.clsTabla th{
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			text-transform: uppercase;
+			color: darkred;
+			border-bottom: 1px solid silver;
+			border-right: 1px solid silver;
+		}
+		
+		.clsTabla tr:nth-child(even) td {
+			background-color: #f9f9f9;
+		}
+		
+		.celda_td th {
+			border-bottom: 1px solid silver;
+			border-right: 1px solid silver;
+		}
+		.celda_td td {
+			border-bottom: 1px solid silver;
+		}
+		
+	.contenedor {
+		position: absolute;
+		margin:auto;
+		left: 0px; right: 0px;
+		top: 15px; bottom: auto;
+		min-height: 200px;
+		width: 90%;
+		max-width: 1500px;
+		min-width: 640px;
+		padding: 5px;
+		border-radius: 3px;
+		
+		/* Formato del contenedor de los formularios */
+			background-color: rgba(0, 0, 0, 0.3);
+			
+		/* Bordes y sombreado */
+			box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver;
+			border: 1px solid black;
+			
+			/* En navegadores que apenas lo están implementando */
+				-moz-box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver;
+				-webkit-box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver;
+				-khtml-box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver;
+				-o-box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver;
+				-ms-box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver;
+				
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				-khtml-border-radius: 3px;
+				-o-border-radius: 3px;
+				-ms-border-radius: 3px;
+				
+		/* Control de desbordamiento */
+			overflow: hidden;
+	}
+	/* Formato de los botones */
+		.contenedor input[value="Limpiar"],
+		.contenedor input[value="Guardar"]
+		{
+			position: relative;
+			border-radius: 2px;
+			padding: 0px 10px;
+			height: 30px;
+			
+			
+			/* Bordes y sombreados */
+				border: 1px solid #a0a0a0;
+				box-shadow: 0px 0px 2px white inset, 0px 0px 2px silver;
+				
+			/* Establecer fuentes */
+				font-size: 12px;
+				font-family: Arial, verdana, sans-serif;
+				font-weight: bold;
+				margin: 4px 0px;
+				
+			/* Colores y fondo */
+				background-color: #f0f0f0;
+				background-image: linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				
+				/* En navegadores que apenas lo están implementando */
+					background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -khtml-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+					background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+		}
+		.contenedor input[value="Limpiar"]:hover,
+		.contenedor input[value="Guardar"]:hover,
+		.contenedor input[value="Guardar"]:focus,
+		.contenedor input[value="Guardar"]:focus {
+			background-color: #f9f9f9;
+		}
+		.contenedor input[value="Limpiar"]:active,
+		.contenedor input[value="Guardar"]:active {
+			box-shadow: 0px 0px 1px white inset, 0px 0px 4px silver inset;
+		}
+	/* Fin | Formato de los botones */
+	.cuerpo {
+		position: relative;
+		background-color: #f9f9f9;
+		
+		/* Sombras */
+			box-shadow: 0px 0px 1px white;
+			
+		/* Control de desbordamiento */
+			overflow: hidden;
+	}
+	.cuerpo .menu {
+		position: relative;
+		margin: auto;
+		height: 30px;
+		line-height: 30px;
+		color: white; text-shadow: 0px 0px 1px black;
+		font-weight: bold;
+		
+		/* Bordes y sombreados */
+			border: 1px solid #400000;
+			box-shadow: 0px 0px 1px white inset;
+			
+		/* Formato de colores */
+			background-color: #c00000;
+			
+			/* En navegadores modernos */
+				background-image: linear-gradient(rgba(0, 0, 0, 0.2) 40%, transparent 80%);
+				background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.2) 40%, transparent 80%);
+				background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.2) 40%, transparent 80%);
+				background-image: -o-linear-gradient(rgba(0, 0, 0, 0.2) 40%, transparent 80%);
+				background-image: -khtml-linear-gradient(rgba(0, 0, 0, 0.2) 40%, transparent 80%);
+				background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2) 40%, transparent 80%);
+	}
+	.cuerpo .menu > div:first-child {
+		position: absolute;
+		left: 0px; right: auto;
+		top: 0px; bottom: 0px;
+		line-height: 30px;
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	.cuerpo .menu > div:last-child {
+		position: absolute;
+		left: auto; right: 0px;
+		top: 0px; bottom: 0px;
+		line-height: 30px;
+		background-color: rgba(255, 255, 255, 0.2);
+		padding: 0px 10px;
+	}
+	.cuerpo .menu > .submenu > div,
+	.cuerpo .menu > .submenu > a {
+		position: relative;
+		float: left;
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		border-right: 1px solid rgba(0, 0, 0, 0.2);
+		padding: 0px 10px;
+		cursor: pointer;
+	}
+	.cuerpo .menu > .submenu > a {
+		text-decoration: none;
+	}
+	.cuerpo .menu > .submenu > div:hover,
+	.cuerpo .menu > .submenu > a:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+		box-shadow: 0px 0px 1px white inset;
+	}
+	.cuerpo .menu + div {
+		position: relative;
+		background-color: white;
+		min-height: 200px;
+		padding: 5px;
+		
+		/* Bordes y sombreado */
+			border: 1px solid black;
+			border-top: 0px;
+			box-shadow: 0px 0px 1px white inset;
+			
+		/* Desbordamiento */
+			overflow: hidden;
+			
+		/* Insertanto imagen de fondo de prueba */
+	}
+	/* De planificación tecnológica */
+		.demoHeaders {
+			display: block;
+			position: relative;
+			margin: 0px auto;
+			margin-bottom: 8px;
+			padding: 4px;
+			color: #303030; text-shadow: 0px 1px 1px white;
+			border-bottom: 1px solid silver;
+		}
+	/* Fin | De planificación tecnológica */
+	
+	.flotar-d {
+		position: relative;
+		float: right;
+	}
+	.flotar-i {
+		position: relative;
+		float: left;
+	}
+	.isesion {
+		display: block;
+		position: relative;
+		margin: 0px auto;
+		height: auto;
+		
+		height: const(ancho);
+		
+		/* Colores y fondo */
+			background-color: #f0f0f0;
+			background-image: linear-gradient(rgba(255, 255, 255, 0.2) 20%, transparent);
+			
+			/* En navegadores que están apenas implementándolo */
+				background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 20%, transparent);
+				background-image: -khtml-linear-gradient(rgba(255, 255, 255, 0.2) 20%, transparent);
+				background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 20%, transparent);
+				background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2) 20%, transparent);
+				background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2) 20%, transparent);
+			
+		/* Bordes y sombreados */
+			border: 1px solid black;
+			border-radius: 3px;
+			box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+			
+		/* Relleno */
+			padding: 4px;
+		
+	}
+	.limpiar {
+		position: relative;
+		clear: both;
+	}
+	/* De planificación tecnológica */
+	#listado_trabajadores {
+		display: block;
+		position: relative;
+		margin: 0px auto !important;
+		width: auto !important;
+	}
+	#listado_trabajadores table:nth-child(6) {
+		text-transform: lowercase;
+	}
+	/* De planificación tecnológica */
+	.pie {
+		position: relative;
+		margin: 0px auto;
+		background: #303030; color: white;
+		/*padding: 7px 5px;
+		
+		/* Bordes y sombreado */
+			border: 1px solid black;
+			border-top: 0px;
+			/*box-shadow: 0px 0px 1px white inset, 0px 0px 1px white;
+			
+		text-align: right;
+		z-index: 0;*/
+	}
+	
+	.pie_pagina {
+		position: absolute;
+		bottom: 20px;
+		left: 5px;
+		right: 5px;
+		background: #303030; color: white;
+		padding: 5px 5px;
+		
+		/* Bordes y sombreado */
+			border: 1px solid black;
+			border-top: 0px;
+			box-shadow: 0px 0px 1px white inset, 0px 0px 1px white;
+			
+		text-align: right;
+		z-index: 0;
+	}
+	.ss-formulario {
+		position: relative;
+		margin: 0px auto;
+		margin-bottom: 4px;
+		padding: 5px;
+		
+		/* Bordes y sombreados */
+			border: 1px solid black;
+			border-radius: 3px;
+			box-shadow: 0px 0px 1px white inset;
+			
+		/* Color de fondo sólido */
+			background-color: rgba(0, 0, 0, 0.3);
+		
+		/* Imagen de fondo del lado del cliente */
+			background-image: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+			background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+			background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+			background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+			background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+			background-image: -khtml-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+			
+		/* Evitar que el relleno incremento su tamaño */
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+	}
+	.ss-formulario div {
+		position: relative;
+		margin: 0px auto;
+		overflow: hidden;
+		margin-bottom: 4px;
+	}
+	.ss-formulario div:last-child {
+		margin-bottom: 0px;
+	}
+	.ss-formulario form {
+		display: block;
+		position: relative;
+		margin: 0px auto;
+		padding: 0px;
+		border: 0px;
+		background-color: #f0f0f0;
+		padding: 4px;
+		
+		/* Bordes y sombreados */
+			border: 1px solid black;
+			box-shadow: 0px 0px 2px white inset;
+	}
+	.ss-formulario form input, .ss-formulario form button,
+	.ss-formulario-sesion form input, .ss-formulario-sesion form button {
+		outline: none;
+		border: 1px solid silver;
+	}
+	/* Formato de los campos de texto y las contraseñas */
+		.ss-formulario form input[type="text"],
+		.ss-formulario form input[type="password"],
+		.ss-formulario-sesion form input[type="text"],
+		.ss-formulario-sesion form input[type="password"] {
+			display: block;
+			position: absolute;
+			margin: auto;
+			left: 0px; right: 0px; 
+			top:0px; bottom: 0px;
+			
+			border: 1px solid #808080;
+			border-radius: 2px;
+			padding: 0px 4px;
+			font-size: 12px;
+			min-height: 30px;
+			
+			/* Bordes y sombreados */
+				box-shadow: 0px 0px 1px white inset, 0px 0px 2px #f9f9f9 inset, 0px 0px 1px white;
+			
+			/* Permitir aplicar tamaño real sin interferencias de bordes y rellenos */
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+		}
+		.ss-formulario form input[type="text"]:focus,
+		.ss-formulario form input[type="password"]:focus,
+		.ss-formulario-sesion form input[type="text"]:focus,
+		.ss-formulario-sesion form input[type="password"]:focus {
+			border: 1px solid #f08000;
+			box-shadow: 0px 0px 1px orange inset;
+			vertical-align: middle;
+		}
+		.ss-formulario form input[type="button"],
+		.ss-formulario form input[type="submit"],
+		.ss-formulario form input[type="reset"],
+		.ss-formulario form button[type="button"],
+		.ss-formulario form button[type="submit"], 
+		.ss-formulario form button[type="reset"],
+		.ss-formulario-sesion form input[type="button"],
+		.ss-formulario-sesion form input[type="submit"],
+		.ss-formulario-sesion form input[type="reset"],
+		.ss-formulario-sesion form button[type="button"],
+		.ss-formulario-sesion form button[type="submit"], 
+		.ss-formulario-sesion form button[type="reset"] {
+			display: inline-block;
+			position: relative;
+			padding: 0px 10px;
+			margin: 4px 0px;
+			height: 30px;
+			vertical-align: middle;
+			font-size: 12px;
+			font-family: arial, verdana, sans-serif;
+			font-weight: bold;
+			
+			/* Bordes y sombreados */
+				border-radius: 2px;
+				border: 1px solid #a0a0a0;
+				box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+				
+				/* En navegadores que apenas lo están implementando */
+					/* Bordes redondos */
+						-webkit-border-radius: 2px;
+						-moz-border-radius: 2px;
+						-ms-border-radius: 2px;
+						-khtml-border-radius: 2px;
+						-o-border-radius: 2px;
+						
+					/* Sombreados */
+						-webkit-box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+						-moz-box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+						-khtml-box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+						-ms-box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+						-o-box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+				
+			/* Imagen de fondo del lado del cliente */
+				background-image: linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+				
+				/* En navegadores que apenas lo están implementando */
+					background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+					background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+					background-image: -kthml-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+					background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+					background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+		}
+		/* Registrar datos */
+			.ss-formulario form input[type="submit"],
+			.ss-formulario form button[type="submit"],
+			.ss-formulario-sesion form input[type="submit"],
+			.ss-formulario-sesion form button[type="submit"] {
+				background-color: #008000;
+				border: 1px solid #004000;
+				color: white;
+			}
+		/* Segundo estado de registrar datos */
+			.ss-formulario form input[type="submit"]:hover,
+			.ss-formulario form button[type="submit"]:hover,
+			.ss-formulario-sesion form input[type="submit"]:hover,
+			.ss-formulario-sesion form button[type="submit"]:hover,
+			.ss-formulario form input[type="submit"]:focus,
+			.ss-formulario form button[type="submit"]:focus,
+			.ss-formulario-sesion form input[type="submit"]:focus,
+			.ss-formulario-sesion form button[type="submit"]:focus {
+				background-color: #00a000;
+			}
+		/* Tercer estado de registrar datos */
+			.ss-formulario form input[type="submit"]:active,
+			.ss-formulario form button[type="submit"]:active,
+			.ss-formulario-sesion form input[type="submit"]:active,
+			.ss-formulario-sesion form button[type="submit"]:active {
+				box-shadow: 0px 0px 1px white inset, 0px 0px 2px #004000 inset;
+			}
+		/* Borrar datos del formulario */
+			.ss-formulario form input[type="reset"],
+			.ss-formulario form button[type="reset"],
+			.ss-formulario-sesion form input[type="reset"],
+			.ss-formulario-sesion form button[type="reset"] {
+				background-color: #f00000;
+				border: 1px solid #800000;
+				color: white;
+			}
+		/* Segundo estado de los botones para borrar formulario */
+			.ss-formulario form input[type="reset"]:hover,
+			.ss-formulario form button[type="reset"]:hover,
+			.ss-formulario-sesion form input[type="reset"]:hover,
+			.ss-formulario-sesion form button[type="reset"]:hover,
+			.ss-formulario form input[type="reset"]:focus,
+			.ss-formulario form button[type="reset"]:focus,
+			.ss-formulario-sesion form input[type="reset"]:focus,
+			.ss-formulario-sesion form button[type="reset"]:focus {
+				background-color: #ff0000;
+			}
+		/* Tercer estado de los botones para borrel fondo no es el pensado
+puede ser cualquier otro con mejor calidad
+lo importante es el mensaje leerlo
+y ver si se le puede agregar algo más
+y la imagen seria bueno ubicar una de mejor calidad pero que sea algo asi el presidente mas el vergatarioar formulario */
+			.ss-formulario form input[type="reset"]:active,
+			.ss-formulario form button[type="reset"]:actis="menu">
+									<div>Menú de navegación</div>
+									<div>Live,
+			.ss-formulario-sesion form input[type="reset"]:active,
+			.ss-formulario-sesion form button[type="reset"]:active {
+				box-shadow: 0px 0px 1px white inset, 0px 0px 3px #600000 inset;
+			}
+		/* Botones normales */
+			.ss-formulario form input[type="button"],
+			.ss-formulario form button[type="button"],
+			.ss-formulario-sesion form input[type="button"],
+			.ss-formulario-sesion form button[type="button"] {
+				background-color: #606060;
+				border: 1px solid black;
+				color: white;
+			}
+		/* Segundo estado de los botones normales */
+			.ss-formulario form input[type="button"]:hover,
+			.ss-formulario form button[type="button"]:hover,
+			.ss-formulario-sesion form input[type="button"]:hover,
+			.ss-formulario-sesion form button[type="button"]:hover,
+			.ss-formulario form input[type="button"]:focus,
+			.ss-formulario form button[type="button"]:focus,
+			.ss-formulario-sesion form input[type="button"]:focus,
+			.ss-formulario-sesion form button[type="button"]:focus {
+				background-color: #808080;
+			}
+		/* Tercer estado de los botones normales */
+			.ss-formulario form input[type="button"]:active,
+			.ss-formulario form button[type="button"]:active,
+			.ss-formulario-sesion form input[type="button"]:active,
+			.ss-formulario-sesion form button[type="button"]:active {
+				box-shadow: 0px 0px 1px white inset, 0px 0px 2px #202020 inset;
+			}
+	/* Formato de formulario de Inicio de Sesión */
+		.ss-formulario-sesion {
+			width: 300px; height: 240px;
+			position: relative;
+			margin: 4px auto;
+			top: 10px;
+			padding: 5px;
+			
+			/* Bordes y sombreados */
+				border: 1px solid #505050;
+				box-shadow: 0px 0px 1px white inset, 0px 0px 3px white;
+				border-radius: 3px;
+				
+			/* Desbordamiento */
+				overflow: hidden;
+				
+			/* Colores de fondo */
+				background-color: rgba(0, 0, 0, 0.4);
+				background-image: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+				
+				/* Navegadores que apenas lo están implementando */
+					background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+					background-image: -khtml-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+					background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+					background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+					background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+					
+			
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		.ss-formulario-sesion div {
+			display: block;
+			position: relative;
+			margin: 4px auto;
+			background-color: white;
+			padding: 0px;
+			overflow: hidden;
+		}
+		.ss-formulario-sesion * {
+			resize: none;
+		}
+		.ss-formulario-sesion form {
+			display: block;
+			position: relative;
+			padding: 4px;
+			
+			/* Bordes y sombreados */
+				border: 1px solid rgba(0, 0, 0, 0.7);
+				box-shadow: 0px 0px 1px white inset;
+				border-radius: 2px;
+				
+			/* Colores de fondo */
+				background-color: #f0f0f0;
+				
+			/* Evitar desbordamiento */
+				overflow: hidden;
+				
+		}
+		.ss-formulario-sesion form input[type="text"],
+		.ss-formulario-sesion form input[type="password"] {
+			background: transparent;
+			display: block;
+			position: relative;
+			margin: 0px auto;
+			width: 100%;
+		}
+		
+	/* Logotipo de VTELCA */
+		.ss-formulario-sesion img[src$="logotipo.png"] {
+			display: block;
+			position: relative;
+			width: 90%;
+			max-width: 350px;
+			height: auto;
+		}
+		.ss-formulario-sesion div:first-child {
+			background: transparent;
+			margin-top: 0px;
+			padding: 4px 0px;
+		}
+		
+	/* Título de los resultados - De planificación tecnológica */
+		.titulo {
+			text-align: center !important;
+		}
+/* ------------------------------------------------------------------------ FIN | CLASES DEFINIDAS POR EL USUARIO --------------- \\ */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ CLASES DEFINIDAS SEGUNDA ETAPA ----------------- \\ */
+	/* Ajustes a tamaños reales */
+		img.ajustar {
+			display: block;
+			position: relative;
+			
+			max-width: 100%;
+			max-height: 100%;
+			
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		img.rellenar {
+			display: block;
+			position: relative;
+			
+			width: 100%;
+			height: 100%;
+			
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			
+		}
+	/* | Formato de botones | */
+		.boton {
+			display: block;
+			position: relative;
+			outline: medium none;
+			padding: 0px 10px;
+			height: 30px;
+			min-width: 100px;
+			font-family: arial, verdana, sans-serif;
+			
+			/* Bordes y sombreados */
+				border: 1px solid #808080;
+				border-radius: 2.5px;
+				box-shadow: 0px 0px 1px white inset, 0px 0px 1px silver;
+				text-shadow: 0px 0px 1px white;
+				
+			/* Fondos y colores */
+				background-color: #e0e0e0;
+				color: #303030;
+				
+				/* Aplicación de brillo */
+					background-image: linear-gradient(rgba(255, 255, 255, .2) 40%, transparent);
+					
+					/* En navegadores que apenas lo están implementando */
+						background-image: -webkit-background-image: linear-gradient(rgba(255, 255, 255, .3), transparent);
+						/*background-image: -moz-background-image: linear-gradient(rgba(255, 255, 255, .3), transparent);*/
+						background-image: -khtml-background-image: linear-gradient(rgba(255, 255, 255, .3), transparent);
+						background-image: -o-background-image: linear-gradient(rgba(255, 255, 255, .3), transparent);
+						background-image: -ms-background-image: linear-gradient(rgba(255, 255, 255, .3), transparent);
+						
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			
+			font-size: 13px;
+		}
+		.boton:hover {
+			background-color: #f0f0f0;
+		}
+		.boton:focus {
+			border: 1px solid #a05020;
+			background-color: #f0f0f0;
+		}
+		.boton:active {
+			box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver, 0px 0px 3px silver inset;
+		}
+		.boton[disabled] {
+			background-color: #c0c0c0;
+			background-image: none;
+			color: #606060;
+			color: #303030; text-shadow: 0px 0px 1px white;
+		}
+	/* | Cajas flexibles | Firefox a partir de versión 18, Google Chrome a partir de la versión 21, 
+			Opera version 12.10, Safari version desconicida, No soportada por Internet Explorer | */
+			.caja {
+				display: box;
+				display: -moz-box;
+				display: -webkit-box;
+			}
+			.caja-flexible {
+				display: block;
+				position: relative;
+				margin: 0px;
+				margin-left: 5px;
+				background-color:  #e0e0e0;
+				box-flex: 1.0; /* Estándar CSS 3 */
+				
+				/* En navegadores que apenas lo están implementando */
+					-moz-box-flex: 1.0; /* Firefox 18+ */
+					-webkit-box-flex: 1.0; /* Chrome 21+, Safari */
+					
+				/* Relleno */
+					padding: 5px;
+			}
+			
+	/* | Formularios | */
+		.formulario {
+			position: relative;
+			padding: 0px
+			border-radius: 3px;
+				
+			/* Evitar que las capas aumenten de tamaños con el relleno y los bordes */
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-o-box-sizing: border-box;
+		}
+		.formulario form {
+			display: block;
+			position: relative;
+			
+		}
+	/* | Fuente con formato de código fuente | */
+		.pre {
+			white-space: pre;
+			font-family: 'Courier New', 'Courier 10 Pitch' !important;
+		}
+	/* | Marcos flotantes | */
+		.caja-flexible {
+			margin-left: 0px;
+		}
+		.marco-flotante {
+			display: block;
+			position: relative;
+			margin: 0px auto;
+			border-radius: 3px;
+			border: 1px solid #a0a0a0;
+			box-shadow: 0px 0px 1px white inset;
+			background-color: #d0d0d0;
+			overflow: hidden;
+			
+			/* Ajustar al tamaño real */
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				
+			/* Aplicación de brillo */
+				background-image: linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				background-image: -khtml-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+				background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 30%, transparent);
+		}
+		.marco-flotante > div {
+			display: block;
+			position: absolute;
+			margin: auto;
+			
+			left: 5px; right: 5px;
+			top: 5px; bottom: 5px;
+			padding: 0px;
+		}
+		.marco-flotante iframe {
+			display: block;
+			position: absolute;
+			margin: auto;
+			
+			width: 100%;
+			height: 100%;
+			
+			/* Ajustar al tamaño real */
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				
+			/* Ajustar bordes y sombreados */
+				border: 0px;
+		}
+	/* Párrafos */
+		.parrafo {
+			display: block;
+			position: relative;
+			margin: 4px auto;
+			line-height: 1.5;
+			text-align: justify;
+		}
+	/* | Cuadros de texto simples  | */
+		.texto {
+			position: relative;
+			background-color: white;
+			margin: 0px auto;
+			margin-bottom: 4px;
+			min-height: 30px;
+			
+			/* Evitar desbordamientos */
+				overflow: hidden;
+				
+			/* Sombreados */
+				box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+		}
+		.texto * {font-family: arial, verdana, sans-serif; font-size: 13px;}
+		.texto input[type="text"],
+		.texto input[type="password"],
+		.texto textarea {
+			display: block;
+			position: absolute;
+			margin: auto;
+			left: 0px; right:0px;
+			top: 0px; bottom: 0px;
+			padding: 0px 5px;
+			
+			/* Bordes y sombreados */
+				border: 1px solid rgba(0, 0, 0, 0.4);
+				
+			/* No permitir redimensionar el cuadro de texto por parte del usuario */
+				resize: none;
+				
+				/* Navegadores que apenas lo están implementando */
+					-moz-resize: none;
+					-webkit-resize: none;
+					-khtml-resize: none;
+					-ms-resize: none;
+					-o-resize: none;
+					
+			outline: none;
+			
+			/* Dimensiones con tamaño real */
+				height: 100%;
+				width: 100%;
+				
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-o-box-sizing: border-box;
+				
+			z-index: 1;
+			background-color: transparent;
+		}
+		.texto, .texto input[type="text"], .texto input[type="password"], .texto textarea {border-radius: 2px;}
+		.texto input[type="text"]:focus,
+		.texto input[type="password"]:focus,
+		.texto textarea:focus {
+			border-color: #a04020;
+			box-shadow: 0px 0px 1px orange inset;
+		}
+		.texto textarea[name="consulta"] {
+			background-color: #f0f0f0;
+			color: #008000;
+			font-weight: bold;
+		}
+		/* Cuadro de texto deshabilitado */
+		.texto input[type="text"][disabled],
+		.texto input[type="password"][disabled],
+		.texto textarea[disabled] {
+			background-color: #e0e0e0;
+			color: #303030; text-shadow: 0px 1px 1px white;
+		}
+	/* | Fin - Cuadros de texto simples  | */
+	
+	.texto-numerico {
+		position: relative;
+		border: #808080;
+		height: 30px;
+		border: 0px;
+		box-shadow:0px 0px 1px white inset, 0px 0px 2px white;
+		border-radius: 2px;
+	}
+	div.texto-numerico input[type="text"],
+	span.texto-numerico input[type="text"] {
+		margin: auto;
+		left: 0px; right: auto;
+		top: 0px; bottom: 0px;
+		outline: medium none;
+		
+		/* | Dimensiones dinámicas  | */
+			width: 100%;
+			
+			/* Para navegadores que apenas lo están implementando */
+				width: -webkit-calc(100% - 42px);
+				width: -moz-calc(100% - 42px);
+				width: -khtml-calc(100% - 42px);
+				width: -o-calc(100% - 42px);
+				width: -ms-calc(100% - 42px);
+			
+		 /* Bordes y sombreados */
+		 	border: 1px solid #808080;
+		 	
+		 /* | Otros formatos  | */
+		 	height: 28px;
+		 	padding: 0px 10px;
+		 	position: absolute;
+		 	font-size: 12px;
+		 	font-family: arial, verdana, sans-serif;
+		 	border-radius: 2px 0px 0px 2px;
+		 	
+		 	box-sizing: border-box;
+		 	-webkit-box-sizing: border-box;
+		 	-moz-box-sizing: border-box;
+		 	-o-box-sizing: border-box;
+	}
+	div.texto-numerico input[type="text"]:focus ~ div,
+	span.texto-numerico input[type="text"]:focus ~ div,
+	div.texto-numerico input[type="text"]:focus ~ span,
+	span.texto-numerico input[type="text"]:focus ~ span,
+	div.texto-numerico input[type="text"]:focus ~ a,
+	span.texto-numerico input[type="text"]:focus ~ a,
+	div.texto-numerico input[type="text"]:focus,
+	span.texto-numerico input[type="text"]:focus {
+		border: 1px solid #a03000;
+	}
+	.texto-numerico .flechas {
+		display: block;
+		position: absolute;
+		margin: auto;
+		left: 0px; right: 0px;
+		top: 0px; bottom: 0px;
+		height: 14px;
+		max-height: 14px;
+		width: 20px;
+		cursor: pointer;
+		text-align: center;
+		z-index: 1;
+		
+		/* Colores y fondos */
+			background-color: #d0d0d0;
+			
+		/* Bordes y sombreados */
+			border: 1px solid #808080;
+			box-shadow: 0px 0px 3px white inset;
+	}
+	.texto-numerico .flechas:hover {
+		background-color: #e0e0e0;
+	}
+	.texto-numerico .flechas:active {
+		box-shadow: 0px 0px 2px white inset, 0px 0px 4px #a0a0a0 inset;	
+	}
+	.texto-numerico .flechas img {
+		display: block;
+		position: absolute;
+		margin: auto;
+		left: 0px; right: 0px;
+		top: 0px; bottom: 0px;
+
+		height: auto;
+		max-width: 10px;
+		max-height: 10px;
+		opacity: 0.5;
+	}
+	.texto-numerico .superior {
+		border-radius: 0px 2px 0px 0px;
+		left: auto;
+		bottom: auto;
+	}
+	.texto-numerico .superior div, .texto-numerico .inferior div {
+		position: absolute;
+		margin: auto;
+		left: 0px; right: 0px;
+		top: 0px; bottom: 0px;
+		padding: 0px;
+		line-height: 11px;
+		text-align: center;
+	}
+	.texto-numerico .superior div {
+		-moz-appearance: button-arrow-up;
+		-webkit-appearance: button-arrow-up;
+	}
+	.texto-numerico .inferior div {
+		-moz-appearance: button-arrow-down;
+		-webkit-appearance: button-arrow-down;
+	}
+	.texto-numerico .inferior {
+		border-radius: 0px 0px 2px 0px;
+		top: auto;
+		left: auto;
+	}
+	.transition {
+		transition: 0.3s ease;
+		-webkit-transition: 0.3s ease;
+		-khtml-transition: 0.3s ease;
+		-o-transition: 0.3s ease;
+		-ms-transition: 0.3s ease;
+		-moz-transition: 0.3s linear;
+	}
+/* ------------------------------------------------------------------------ FIN | CLASES DEFINIDAS SEGUNDA ETAPA --------------- \\ */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Provisional -- Todo lo que sigue aquí es provisional */
+.tabla {
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+	border-collapse: collapse;
+	border-left: 1px solid silver;
+	border-top: 1px solid silver;
+}
+.tabla td, .tabla th {
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+	padding: 4px;
+	text-transform: capitalize;
+}
+.tabla th {
+	background-color: #d0d0d0;
+	height: 35px; color: #303030; text-shadow: 0px 1px 1px white;
+	box-shadow: 0px 0px 2px white inset;
+	
+	/* Imagen del lado del cliente */
+		background-image: linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+		
+		/* En navegadores que apenas lo están implementando */
+			background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+			background-image: -khtml-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+			background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+			background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+			background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.2) 40%, transparent);
+}
+.tabla tr:nth-child(even) td {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+/* Centrar texto  */
+	.tabla tr td:nth-child(5),
+	.tabla tr td:nth-child(6),
+	.tabla tr td:nth-child(7),
+	.tabla tr td:nth-child(8) {
+		text-align: center !important;
+	}
+/* Para correos electrónicos */
+	.tabla tr td:nth-child(8), .tabla tr td:nth-child(4) {
+		text-transform: lowercase;
+	}
+	
+.relleno {padding: 0px 5px;}
+input[name="pin_ac"] {
+	width: 100px;
+	outline: none;
+	border: 1px solid #a0a0a0;
+	border-radius: 2px;
+	box-shadow: 0px 0px 1px white inset, 0px 0px 2px silver;
+	height: 30px;
+	text-align: center;
+	padding: 0px 4px;
+	text-transform: uppercase;
+}
+input[name="pin_ac"]:focus {
+	border-color: #f04000;
+	box-shadow: 0px 0px 2px #ffa000 inset, 0px 0px 2px silver;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+	/* ----| Visualizador de resultados */
+		.ver-resultados {
+			display: block;
+			position: absolute;
+			margin: auto;
+			left: 0px; right: 0px;
+			top: 0px; bottom: 0px;
+			height: 85%; width: 85%;
+			
+			/* Bordes y sombreados */
+				border: 1px solid black;
+				box-shadow: 0px 0px 1px white inset, 0px 0px 2px white;
+				border-radius: 2.5px;
+				
+			/* Colores y fondo */
+				background-color: rgba(0, 0, 0, 0.4);
+				
+			/* Control de desbordamiento */
+				overflow: hidden;
+				
+			/* z-index: 10;*/
+				z-index: 1;
+		}
+		.ver-resultados + div[name="sombra"] {
+			display: block;
+			position: fixed;
+			margin: auto;
+			left: 0px; right: 0px;
+			top: 0px; bottom: 0px;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+		.ver-resultados div.title {
+			display: block;
+			position: absolute;
+			left: 5px; right: 5px;
+			top: 5px; bottom: auto;
+			border: 1px solid black;
+			border-bottom: 0px;
+			height: 30px;
+			line-height: 30px;
+			overflow: hidden;
+			
+			padding: 0px 5px;
+			background-color: white;
+		}
+		.ver-resultados div.cuerpo {
+			display: block;
+			position: absolute;
+			margin: auto;
+			left: 5px; right: 5px;
+			top: 35px; bottom: 5px;
+			background-color: white;
+			border: 1px solid black;
+			border-top: 0px;
+			border-radius: 0px;
+		}
+		.ver-resultados .marco-flotante {
+			position: absolute;
+			margin: auto;
+			left: 0px; right: 0px;
+			top: 0px; bottom: 0px;
+		}
+		.ver-resultados .texto {
+			position: absolute;
+			left: 0px; right: 150px;
+			top: 0px; bottom: 0px;
+			padding:0px 5px;
+			background-color: #f0f0f0;
+			
+			background-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+				/* Navegadores que apenas lo están implementando */
+					background-image: -webkit-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+					background-image: -khtml-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+					background-image: -ms-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+					background-image: -o-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+					background-image: -moz-image: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+		}
+		.ver-resultados .opciones {
+			position: absolute;
+			margin: auto;
+			top: 0px; bottom: 0px;
+			left: auto; right: 0px;
+			width: 150px;
+		}
+		.ver-resultados .opciones div[name="maximizar"] {
+			position: absolute;
+			margin: auto;
+			left: 0px; right: 75px;
+			top: 0px; bottom: 0px;
+			line-height: 30px;
+			overflow: hidden;
+			text-align:center;
+			cursor:pointer;
+		}
+		.ver-resultados .opciones div[name="cerrar"] {
+			position: absolute;
+			margin: auto;
+			left: 75px; right: 0px;
+			top: 0px; bottom: 0px;
+			line-height: 30px;
+			overflow: hidden;
+			text-align:center;
+			cursor: pointer;
+		}
+		.ver-resultados .opciones div[name] {
+			border: 1px solid black;
+			border-top: 0px;
+			border-bottom: 0px;
+			border-right: 0px;
+			background-color: #f0f0f0;
+			color: #303030; text-shadow: 0px 1px 1px white;
+			box-shadow: 0px 0px 2px white inset;
+			
+			/* Brillo aplicado el fondo */
+				background-image: linear-gradient(rgba(0, 44, 66, 0.2), transparent);
+				background-image: -ms-background-image: linear-gradient(rgba(0, 44, 66, 0.2), transparent);
+				background-image: -khtml-background-image: linear-gradient(rgba(0, 44, 66, 0.2), transparent);
+				background-image: -o-background-image: linear-gradient(rgba(0, 44, 66, 0.2), transparent);
+				background-image: -moz-background-image: linear-gradient(rgba(0, 44, 66, 0.2), transparent);
+				background-image: -webkit-background-image: linear-gradient(rgba(0, 44, 66, 0.2), transparent);
+		}
+		.ver-resultados .opciones div[name]:hover {
+			background-color: #e0e0e0;
+		}
+		.ver-resultados .opciones div[name]:active {box-shadow: 0px 0px 2px gray inset;}
+		
+		.centrar_cont_capa {
+			text-align: center;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+		
+		.separador_der{
+			border-right: 2px solid darkred;
+		}
+		
+		.separador_izq{
+			border-left: 2px solid darkred;
+		}
+		
+/* Formato de los controles de radio */
+	.radio-contenedor {
+		display: block;
+		position: relative;
+	}
+	.radio {
+		display: block;
+		position: relative;
+		min-height: 30px;
+		line-height: 30px;
+	}

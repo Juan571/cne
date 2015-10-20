@@ -1,0 +1,456 @@
+@CHARSET "UTF-8";
+
+/*
+@import "hoja_de_estilo.css";
+@import url("hoja_de_estilo.css");
+
+*/
+@import "tablas.css";
+@import "letras.css";
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.body_std
+{
+ font-family: sans-serif;
+ background: url(../img/fondo.png);
+ margin-top: 5px;
+}
+
+ #contenedor
+ {
+	width:90%;
+	height:auto;
+	margin:auto;
+	/*borde redondeado*/
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	/*borde redondeado*/
+	border: 0px solid black;
+	background:#FFF;
+	overflow-y: auto;
+	overflow-x: auto;
+ }
+
+ #pre_cabecera
+ {
+ 	border: 1px solid black;
+     width:1024px;
+	  height: 40px;
+ }
+
+ .logo_mpp
+  {
+
+ 	   background: #fff url(../img/Ministerio.jpg) no-repeat left;
+  }
+
+ .logo_vtelca
+ {
+    background: #fff url(../img/vtelca.jpg) no-repeat center;
+ }
+
+ .logo_bicentenario
+   {
+ 	  background: #fff url(../img/corazon_venezolano.jpg) no-repeat right;
+   }
+
+  #linea_divisora
+ {
+     width: 100%;
+ 	 background-color: #B22222;
+ 	 height:18px;
+     font-family: Tahoma, Verdana, Arial, sans-serif;
+	 font-size: .8em;
+	 color: #fff;
+	 text-align: right;
+	 padding-top:4px;
+	 font-weight:bold;
+ }
+
+  #menu
+ {
+  width: 100%;
+  height: 3%;
+  text-align: center;
+  color:#000;
+  background: #999 url(../img/menu.png) repeat left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  padding-top: 5px;
+  font-weight: bold;
+  clear: both;
+  font-style: italic;
+  cursor:pointer;
+ }
+
+
+ #menu:hover
+ {
+   width:  100%;
+   height: 3%;
+   text-align: center;
+   background: #990000;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:18px;
+    padding-top: 5px;
+   font-weight: bold;
+   clear: both;
+   font-style: italic;
+   cursor:pointer;
+   color:#fff;
+ }
+
+.clsContenido {
+	width: auto !important;
+	height: auto !important;
+	position: absolute !important;
+	border: 1px solid silver !important;
+	border-radius: 10px !important;
+	left: 4%;
+	margin-top: -30px !important;
+	top: 20%;
+	box-shadow: 0px 0px 10px RGB(160, 160, 160) !important;
+	padding: 7px !important;
+}
+
+.clsTabla {
+	display: table !important;
+	width: 100% !important;
+	height: 100% !important;
+	border-left: 1px solid silver !important;
+	border-top: 1px solid silver !important;
+}
+.clsFila {
+	display: table-row !important;
+}
+.clsCelda {
+	display: table-cell !important;
+	vertical-align: middle !important;
+	text-align: center !important;
+	border-right: 1px solid silver !important;
+	border-bottom: 1px solid silver !important;
+}
+
+.clsCeldaSinBorde{
+	border: none !important;	
+}
+
+.listado_menus {
+	position: absolute;
+	display: none;
+	width: 89%;
+	border-bottom:  1px solid #ccc;
+	background-image: url("../img/corazon_vt.png");
+	background-repeat: no-repeat;
+	background-position: 96%;
+}
+
+.clsMenu{
+	background-color: white;	
+	vertical-align: top !important;
+	text-align: left !important;
+	top: 10px;
+	border-bottom: none !important;
+	border-right: none !important;
+	border-left: 1px solid silver !important;
+}
+
+ #menu_opciones
+ {
+ 	height: auto;
+    width: 1023px;
+    margin-top: 2.8%;
+    border: 1px solid #ccc;
+    /*background-color: #D0D0D0;*/
+    background-color: white;
+    clear: both;
+ }
+
+
+ #menu_opciones #panel1,#panel2, #panel3
+ {
+  border: 0px solid black;
+  width: 25%;
+  height: 100%;
+  float: left;
+ }
+
+ #menu_opciones #panel1,#panel2,#panel3
+  {
+   border-right: 1px solid #ccc;
+  }
+
+ #menu_opciones #panel4
+ {
+  width: 24%;
+  height: 100%;
+  background: #fff;
+  float: left;
+ }
+
+ #panel4 #logo
+ {
+ 	background: url(../img/corazon.png);
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+ 	height: 100%;
+
+ }
+
+
+#navi li
+ {
+ 	list-style-type: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:12px;
+   line-height: 2.0em;
+    }
+
+ 	 #navinivelsuperior
+ {
+ 	list-style-type: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:12px;
+   font-weight: bold;
+   line-height: 2.0em;
+   
+ }
+
+
+  #piedepagina
+ {
+	width: 90%;
+	height:3%;
+	/*borde redondeado*/
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border: 1px solid #B22222;
+	background-color: #B22222;
+	/*borde redondeado*/
+	/*background: url(../img/linearoja.gif);*/
+	margin:auto;
+ }
+
+#demenu, #deerror, #deinformacion, .msj_error
+{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        line-height: normal;
+        font-weight: bold;
+        text-align: center;
+        white-space: normal;
+        left: 18%;
+        border-radius: 2px;
+        height: 15px;
+        width: 65%;
+        padding-top:4px;
+        top:3px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    position:absolute;
+   /* padding:0px 0px 15px 0px;*/
+}
+
+#deinformacion
+{
+        color: #FFF;
+        background-color: #87CEEB;
+        border: 1px solid #0000FF;
+        background-image: url(../img/informacion.png);
+        box-shadow: 0px 0px 10px #0000FF !important;
+}
+
+#demenu
+{
+        color: #006400;
+        background-color: #98FB98;
+        border: 1px solid #32CD32;
+    background-image: url(../img/sele.png);
+        box-shadow: 0px 0px 10px #32CD32 !important;
+}
+
+#deerror
+{
+   color: #CC0000;
+   background-color: #FFFBEC;
+   border: 1px solid #CC0000;
+   background-image: url(../img/error16x16.png);
+   box-shadow: 0px 0px 10px #CC0000 !important;
+}
+
+.msj_error{
+        color: #CC0000;
+        background-color: #FFFBEC;
+        border: 1px solid #CC0000;
+        background-image: url(../img/error16x16.png);
+        background-repeat: no-repeat;
+        box-shadow: 0px 0px 10px #CC0000 !important;
+}
+
+.centrar_texto{
+	text-align: center !important;
+}
+
+.alinear_izquierda{
+	text-align: left !important;
+}
+
+.alinear_derecha{
+	text-align: right !important;
+}
+
+.principale
+{
+    z-index:5;
+    position:fixed;
+    top:89px;
+    bottom:0px;  
+    overflow-y:auto;
+    overflow-x:auto;
+    width:100%;
+	
+}
+/*ESTILOS BOOTSTRAP*/
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	display: inline-block;
+	height: 24px;
+	padding: 2px 3px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #555555;
+	vertical-align: middle;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+textarea{
+	height: auto;
+}
+
+input[type="text"], input[type="password"], input[type="search"], isindex {
+	-webkit-appearance: textfield;
+	padding: 1px;
+	background-color: white;
+	border: 2px inset;
+	border-image: initial;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	cursor: auto;
+}
+
+input, textarea, keygen, select, button, isindex {
+	margin: 0em;
+	font: -webkit-small-control;
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+}
+
+input[type="checkbox"]{
+	cursor: pointer;
+	/*margin: 4px 0 0;*/
+	margin-top: 1px \9;
+	margin-right: 3px;
+	*margin-top: 0;
+	line-height: normal;
+	width: auto;
+}
+
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/*ESTILOS BOOTSTRAP*/
+
+.requerido{
+	background: url(../img/asterisco.png) no-repeat scroll center left;
+	background-color: white;
+	padding-left: 20px !important;
+	/*padding: 2px 1px 0px 18px;
+	border: 2px solid #7F9DB9;
+	color:#000;
+	height: 25px;
+	*/font-family:Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	/*font-weight:bold;*/
+}
+
+.teareata{
+    height: 60px;
+    width:99%;
+}
+
+
+.titulosventanas
+{
+    color:#990000; 
+	text-transform:uppercase; 
+	background-image:url(../img/menu.png); 
+    border-top:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif, verdana;
+	font-size: 10pt;
+}
+
+.txt_formato{
+	color: #990000;
+	font-weight: bold; 
+	font-family:Arial, Helvetica, sans-serif, verdana;
+	font-size: 10pt;
+	text-transform:uppercase; 
+}
+	
+.fecha_input
+{
+	font-family: Arial;
+	font-size: 12px;
+	height: 25px;
+}
+
+a.fecha { background-image: url(../img/icono_t_fecha.png); }
+
+div.contenedor_fecha a.fecha { background-repeat: no-repeat; background-position: left; height: 16px; margin-left: 4px; }
+div.contenedor_fecha a.fecha:link, div.contenedor_fecha a:visited { float:left; width: 16px; text-decoration: none; }
+div.contenedor_fecha a:hover { background-position: right; }

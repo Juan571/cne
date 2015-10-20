@@ -1,0 +1,36 @@
+.container{
+
+	width: 90%;
+
+}
+
+
+body{
+
+	/*background: transparent url(../img/madera.jpg) center fixed no-repeat;*/
+	background: transparent url(http://rec.vtelca.gob.ve/img/fondo-claro.png) center fixed no-repeat;
+	background-attachment: fixed;
+	overflow: scroll;
+	background-repeat:no-repeat;
+	background-size:cover;
+	opacity: 0.9;
+}
+.effect-airbnb {
+	background: rgba(0, 0, 0, 0);
+}
+header {
+
+
+	height: 70px;
+	background: url(http://rec.vtelca.gob.ve/img/cintillo-tic.png)  left no-repeat,
+	url(http://rec.vtelca.gob.ve/img/vtelca-transparente.png) center no-repeat,
+	url(http://rec.vtelca.gob.ve/img/pueblo-victorioso.jpg) right no-repeat;
+	background-color: #fff;
+	background-size: auto 50px;
+	margin: 0px;
+	margin-top: -10px;
+	border-bottom: 4px solid #f00;
+}
+a{
+	color: #0000FF;
+}

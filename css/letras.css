@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+
+#letrasmenu
+{
+   color:#8B0000;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:12px;
+   font-weight: bold;
+   line-height: 1.7em;
+}
+
+#letrasmenu:hover
+{
+  	  color:#000000;
+ 	  text-decoration: none;
+ 	  font-family: Arial, Helvetica, sans-serif;
+      font-size:12px;
+}

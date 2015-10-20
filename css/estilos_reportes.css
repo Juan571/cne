@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+.tabla_std
+{
+    color:black;
+    background-color: #FFF;	
+    text-transform:uppercase;
+    clear:both;
+    padding: 0;
+    margin: 0 0 2px 0;
+    white-space: normal;
+	border-left: 1px solid silver;
+	border-top: 1px solid silver;
+}
+
+.td_std
+{
+
+    font-family:arial, Helvetica, sans-serif, serif, fantasy;
+    font-size: 10pt;
+    line-height: normal;
+    white-space: normal;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+
+.th_std {
+ 	color:#990000;
+  	background:url(../../img/menu.png);
+    text-align:center;
+ 	font-family: arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	white-space: normal;
+	text-transform:uppercase;
+	font-weight: bold;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+
+.table_std .tr_std.altRow .td_std {
+	background: #f4f4f4;
+}
+.table_std .td_std.actions {
+	white-space: nowrap;
+}
+
+.clsSinborde{
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+.texto_titulo{
+	color: darkred;
+	font-weight: bold;
+	font: normal 12px;
+}
