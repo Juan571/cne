@@ -98,7 +98,6 @@ function utf8_decode(str_data) {
       i += 4;
     }
   }
-
   return tmp_arr.join('');
 }
 function ajax(data){
@@ -146,7 +145,7 @@ function ajax(data){
             if (data.error==0){
 
                 if (data.modo==1){
-                    console.log(data);
+                    //console.log(data);
                     
                     $(".datos").show();
                     $("#datos_cedula").text(data.cedula);
