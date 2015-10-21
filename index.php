@@ -82,36 +82,36 @@
                             <div id"datos" class="datos col-md-8" style="text-align: center;display:none">
                                 <h2 style="color: black;">Datos del Elector</h2>
                                 <div  class="col-md-4" style="text-align: left;display: flex;">
-                                    <h4 style="color: black;"> Cédula:</h4>
-                                    <h3 style="color: white;" id="datos_cedula"></h3>
+                                    <h4 style="color: red;"> Cédula:</h4>
+                                    <h3 style="color: black;" id="datos_cedula"></h3>
                                 </div>
                                 <div class="col-md-8" style="text-align: left;display: flex;">
-                                    <h4 style="color: black;"> Nombre:</h4>
-                                    <h3 style="color: white;" id="datos_nombre"></h3>
+                                    <h4 style="color: red;"> Nombre:</h4>
+                                    <h3 style="color: black;" id="datos_nombre"></h3>
                                 </div>
                                 <div class="col-md-4" style="text-align: left;display: flex;">
-                                    <h4 style="color: black;"> Estado:</h4>
-                                    <h4 style="color: white;" id="datos_estado"></h4>
+                                    <h4 style="color: red;"> Estado:</h4>
+                                    <h4 style="color: black;" id="datos_estado"></h4>
                                 </div>
 
 
                                 <div  class="col-md-4" style="text-align: left;display: flex;">
-                                    <h4 style="color: black;"> Municipio:</h4>
-                                    <h4 style="color: white;" id="datos_municipio"></h4>
+                                    <h4 style="color: red;"> Municipio:</h4>
+                                    <h4 style="color: black;" id="datos_municipio"></h4>
                                 </div>
                                 <div class="col-md-4" style="text-align: left;display: flex;">
-                                    <h4 style="color: black;"> Parroquia:</h4>
-                                    <h4 style="color: white;" id="datos_parroquia"></h4>
+                                    <h4 style="color: red;"> Parroquia:</h4>
+                                    <h4 style="color: black;" id="datos_parroquia"></h4>
                                 </div>
                                 <div class="col-md-12" style="text-align: left;display: flex;">
-                                    <h4 style="color: black;"> Centro:</h4>
-                                    <h4 style="color: white;" id="datos_centro"></h4>
+                                    <h4 style="color: red;"> Centro:</h4>
+                                    <h4 style="color: black;" id="datos_centro"></h4>
 
                                 </div>
 
                                 <div class="col-md-12" style="text-align: left;">
-                                    <h4 style="color: black;"> Dirección:</h4>
-                                    <h3 style="color: white;" id="datos_direccion"></h3>
+                                    <h4 style="color: red;"> Dirección:</h4>
+                                    <h3 style="color: black;" id="datos_direccion"></h3>
 
                                 </div>
                             </div>
